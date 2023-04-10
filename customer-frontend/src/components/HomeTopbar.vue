@@ -69,7 +69,7 @@ onBeforeUnmount(() => {
         <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
       </nav>
 
-      <a href="#custom-order" class="custom-order-btn scrollto">Custom Order</a>
+      <a href="#custom-order" class="custom-order-btn scrollto">Order Online</a>
     </div>
 </header>
 
@@ -134,7 +134,7 @@ onBeforeUnmount(() => {
 }
 
 .custom-order-btn {
-    background: #ffb03b;
+    background: #fa0909;
     color: #fff;
     border-radius: 50px;
     margin: 0 0 0 20px;
@@ -146,7 +146,7 @@ onBeforeUnmount(() => {
     white-space: nowrap;
 }
 .custom-order-btn:hover {
-    background: #ffa012;
+    background: #f41488;
     color: #fff;
 }
 @media (max-width: 992px) {
@@ -193,7 +193,7 @@ onBeforeUnmount(() => {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-    color: #ffb03b;
+    color: #fa0909;
 }
 
 </style>

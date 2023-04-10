@@ -455,7 +455,7 @@ watch(
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
   padding: 30px;
-  background: #fff;
+  background: #fffaf3;
 }
 
 .custom-order .request-form .form-group {
@@ -482,16 +482,16 @@ form input[type='file'] {
 }
 
 .custom-order .request-form button[type=submit] {
-  background: #ffb03b;
+  background: #fa0909;
   border: 0;
   padding: 10px 24px;
-  color: #fff;
+  color: #ffffff;
   transition: 0.4s;
   border-radius: 50px;
 }
 
 .custom-order .request-form button[type=submit]:hover {
-  background: #ffa012;
+  background: #f9299f;
 }
 
 .error-container {
