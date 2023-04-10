@@ -24,36 +24,27 @@ import { RouterLink, RouterView } from 'vue-router';
         </RouterLink>
       </li>
       <li>
-        <RouterLink to="/admin/orders" class="navlink-container">
+        <RouterLink to="/orders" class="navlink-container">
           <i class='bx bxs-inbox bx-md'></i>
           <span>Orders</span>
         </RouterLink>
       </li>
       <li>
-        <RouterLink to="/admin/customers" class="navlink-container">
+        <RouterLink to="/customers" class="navlink-container">
           <i class='bx bx-group bx-md'></i>
           <span>Customers</span>
         </RouterLink>
       </li>
       <li>
-        <RouterLink to="/admin/menu" class="navlink-container">
+        <RouterLink to="/menu" class="navlink-container">
           <i class='bx bxs-food-menu bx-md'></i>
           <span>Menu</span>
         </RouterLink>
       </li>
       <li>
-        <RouterLink to="/admin/reports" class="navlink-container">
+        <RouterLink to="/reports" class="navlink-container">
           <i class='bx bxs-report bx-md'></i>
           <span>Reports</span>
-        </RouterLink>
-      </li>
-    </ul>
-    <!-- Bottom Side Navlinks -->
-    <ul class="bottom-navlinks">
-      <li>
-        <RouterLink to="/" class="navlink-container">
-          <i class='bx bx-log-out bx-md'></i>
-          <span>Logout</span>
         </RouterLink>
       </li>
     </ul>

@@ -1,5 +1,5 @@
 <script setup>
-import { useRouter, useRoute } from 'vue-router';
+import { useRouter } from 'vue-router';
 import { ref, computed } from 'vue';
 import OrderAPI from '../../services/OrderAPI';
 import VueTableLite from 'vue3-table-lite';

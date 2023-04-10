@@ -131,7 +131,7 @@ const rowClicked = (row) => {
 
       <label class="search-by-label">Search By:</label> <input v-model="searchTerm" />
     </div>
-    <RouterLink to="/admin/customer-form">
+    <RouterLink to="/customer-form">
       <button type="button" class="btn btn-primary">+ Add Customer</button>
     </RouterLink>
   </div>

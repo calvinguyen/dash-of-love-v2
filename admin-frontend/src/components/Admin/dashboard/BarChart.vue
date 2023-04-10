@@ -5,6 +5,7 @@ import {
   Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale 
 } from 'chart.js';
 import VueDatePicker from '@vuepic/vue-datepicker';
+import '@vuepic/vue-datepicker/dist/main.css';
 import ReportAPI from '../../../services/ReportAPI';
 
 const props = defineProps({

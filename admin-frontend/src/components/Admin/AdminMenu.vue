@@ -8,7 +8,7 @@ import {
 } from 'mdb-vue-ui-kit';
 import { ref } from 'vue';
 import productMenuAPI from '../../services/productMenuAPI';
-import HomeMenu from '../HomeMenu.vue';
+import PublicMenu from './PublicMenu.vue';
 import MenuTypes from './MenuTypes.vue';
 import MenuFlavors from './MenuFlavors.vue';
 
@@ -55,7 +55,7 @@ const activeTabId = ref('menu');
     <MDBTabContent>
 
       <MDBTabPane tabId="menu">
-        <HomeMenu :cake-types="cakeTypes" :cake-flavors="cakeFlavors" />
+        <PublicMenu />
       </MDBTabPane>
 
       <MDBTabPane tabId="types">
