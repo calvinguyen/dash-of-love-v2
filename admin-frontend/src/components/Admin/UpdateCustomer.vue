@@ -130,16 +130,13 @@ const handleCustomerUpdate = async () => {
     .catch(err => console.log(err));
 };
 
-const zipWatch = ref(customerData.zip);
-
-watch(zipWatch, async (newZip, oldZip) => {
-  if (newZip.length != 5) return;
-  try {
-    await getAddress(newZip);
-  } catch (error) {
-    console.error(error);
+watch(
+  () => customerData.zip,
+  (zip) => {
+    if (zip.length != 5) return;
+    getAddress(zip);
   }
-})
+);
 </script>
 
 
@@ -147,7 +144,7 @@ watch(zipWatch, async (newZip, oldZip) => {
 <section id="update-customer">
 <div class="container">
 
-  <form @submit.prevent="handleCustomerUpdate">
+  <form @submit.prevent="handleCustomerUpdate" @keydown.enter="$event.preventDefault()">
     <h2>Update Customer</h2>
     <div class="row">
       <!-- First Name Field -->
@@ -238,6 +235,7 @@ watch(zipWatch, async (newZip, oldZip) => {
         >
           *{{ error.$message }}
         </span>
+        <!-- @change="getAddress(customerData.zip)"  -->
         <input v-model="customerData.zip" type="text" class="form-control" id="zip">
       </div>
       <!-- Country Field -->
