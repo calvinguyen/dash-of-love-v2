@@ -1,4 +1,4 @@
-# vue-dashoflove
+# admin-dashoflove
 
 This project uses VueJS 3 with Vite and Bootstrap. For form validation Vuelidate is used.
 
