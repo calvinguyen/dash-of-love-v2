@@ -149,7 +149,7 @@ const submitForm = async () => {
     <div class="row">
       <!-- Cake Type Field  -->
       <div class="col-lg-4 col-md-6 form-group mt-3">
-        <label for="cakeType" class="form-label">Cake Type</label>
+        <label for="cakeType" class="form-label">Cake Type*</label>
         <span 
           v-for="error of v$.selectedCakeType.typeID.$errors"
           :key="error.$uid"
@@ -166,7 +166,7 @@ const submitForm = async () => {
       </div>
       <!-- Cake Flavor Field -->
       <div class="col-lg-4 col-md-6 form-group mt-3">
-        <label for="cakeFlavor" class="form-label">Cake Flavor</label>
+        <label for="cakeFlavor" class="form-label">Cake Flavor*</label>
         <span 
           v-for="error of v$.orderData.cakesID.$errors"
           :key="error.$uid"
@@ -183,7 +183,7 @@ const submitForm = async () => {
       </div>
       <!-- Available Date Field -->
       <div class="col-lg-4 col-md-6 form-group mt-3">
-        <label for="desiredDate" class="form-label">Desired Date</label>
+        <label for="desiredDate" class="form-label">Desired Date*</label>
         <span 
           v-for="error of v$.orderData.desired_date.$errors"
           :key="error.$uid"
@@ -200,7 +200,7 @@ const submitForm = async () => {
       </div>
       <!-- Referral Field -->
       <div class="col-lg-3 col-md-6 form-group mt-3">
-        <label for="referral" class="form-label">Referral</label>
+        <label for="referral" class="form-label">Referral*</label>
         <span 
           v-for="error of v$.orderData.referralID.$errors"
           :key="error.$uid"
@@ -259,7 +259,7 @@ const submitForm = async () => {
     <div class="row">
       <!-- Design Description Field -->
       <div class="form-group col-md-6">
-        <label for="cake_details" class="form-label">Cake Design Details:</label>
+        <label for="cake_details" class="form-label">Cake Design Details:*</label>
         <span 
           v-for="error of v$.orderData.cake_details.$errors"
           :key="error.$uid"
@@ -348,6 +348,10 @@ form input[type='file'] {
 }
 .final-price-container span {
   height: 44px;
+}
+
+form label {
+  font-weight: 600;
 }
 
 </style>

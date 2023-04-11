@@ -212,7 +212,7 @@ export async function getOrdersNewToday(currentDate) {
 export async function getOrdersThisWeek() {
     const sql = `
         select *, concat(first_name, ' ', last_name) as 'Customer' from order_view
-        where YEARWEEK(order_date)=YEARWEEK(NOW());
+        where YEARWEEK(order_date, 1)=YEARWEEK(NOW(), 1);
     `;
     const [results] = await db.query(sql);
 
