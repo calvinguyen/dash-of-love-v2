@@ -102,7 +102,7 @@ const formData = reactive({
   desired_date: "",
   pick_up_details: "",
   final_price: "",
-  paymentID: "",
+  paymentID: null,
 });
 
 // get order

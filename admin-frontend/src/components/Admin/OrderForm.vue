@@ -70,7 +70,7 @@ const orderData = reactive({
   image: "",
   pick_up_details: "",
   final_price: "",
-  paymentID: "",
+  paymentID: null,
 });
 
 // Set form validation rules
