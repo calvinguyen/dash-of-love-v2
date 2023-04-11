@@ -92,7 +92,7 @@ onBeforeUnmount(() => {
     top: -50px;
 }
 #topbar i {
-    color: #ffb03b;
+    color: #fa0909;
     line-height: 0;
 }
 #topbar i span {
@@ -146,7 +146,8 @@ onBeforeUnmount(() => {
     white-space: nowrap;
 }
 .custom-order-btn:hover {
-    background: #f41488;
+    background: #fc8484
+;
     color: #fff;
 }
 @media (max-width: 992px) {
